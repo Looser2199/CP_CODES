@@ -1,3 +1,5 @@
+// SEGMENT TREE- RANGE SUM QUERY WITHOUT RECURSION
+
 #include<bits.stdc++.h>
 using namespace std;
 
@@ -50,5 +52,7 @@ int main(){
 	for(int i=0;i<n;i++)
 	cin>>a[i];
 	
-	build(a);
+	build(a);	
+	modify(1,10);     // 0 indexed
+	cout<<Sum(0,n-1); // inclusive 
 }
